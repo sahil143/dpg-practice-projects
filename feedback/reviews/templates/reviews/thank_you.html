@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Review</title>
-</head>
-<body>
+{% extends 'reviews/base.html' %}
+{% block title %}
+  Your Review
+{% endblock title %}
+
+{% block content %}
   <div>Thank you!</div>
-</body>
-</html>
+  {{ message }}
+{% endblock content %}
+

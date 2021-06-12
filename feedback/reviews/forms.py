@@ -12,8 +12,8 @@ from django import forms
 class ReviewForm(forms.ModelForm):
   class Meta:
     model = Review
-    # fields = '__all__'
-    exclude = ["owner_comment"]
+    fields = '__all__'
+    # exclude = ["owner_comment"]
     labels = {
       "user_name": "Your Name",
       "review_text": "Yout Review",
